@@ -1,0 +1,65 @@
+body{
+    background-image:url(Buddha-Quotes-on-Life-Hidden-Mantra-1024x1024.webp);
+    /*background-color:aqua;*/
+    background-position: center;
+}
+h1{
+    text-shadow: 0px 0px 5px yellowgreen;
+    box-shadow: -5px 0px 5px orange;
+}
+img{
+    float:right;
+}
+.odd{
+    margin-top: 10px;
+    border: 5px solid;
+    box-align:"left";
+    width: 200px;
+    height: 40px;
+    background-color: bisque;
+    text-transform: uppercase;
+    color:red;
+    padding: 0%;
+    margin-top: 2%;
+}
+.even{
+    margin-left: auto;
+    margin-right: 0;
+    box-align:"right";
+    border: 5px solid;
+    width: 210px;
+    height: 40px;
+    background-color: bisque;
+    text-transform: uppercase;
+    color:chartreuse;
+    /*margin-top: 2%;*/
+
+}
+button{
+   block-size: 10%;
+}
+button:hover{
+    block-size: 10%;
+    color: burlywood;
+
+}
+#box1{
+    /*transform: translateX(50px);
+    transform: translatey(50px);*/
+    /*transform:translateZ(50px) ;*/
+    /*transform: translate3d(50px);*/
+    /*transform: rotatez(180deg);*/
+   /* transform:scaleX(100%);/*only some part will be visible*/
+    transform: matrix(0.5,0,0,1,0,0);
+    position:fixed;
+    border: 5px solid;
+    box-align:"left";
+    width: 200px;
+    height: 40px;
+    background-color: bisque;
+    text-transform: uppercase;
+    color:red;
+    top: 50px;
+    padding: 0%;
+    margin-top: 40%;
+}

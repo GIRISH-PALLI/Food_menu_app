@@ -1,0 +1,340 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PizzApp - Healthy Thin Crust Pizza, Delivered Fast!</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/e/ee/Pizza_icon_stylized.svg" type="image/svg+xml">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <a href="#" class="logo">PizzApp</a>
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#featured-pizzas">Menu</a></li>
+                    <li><a href="#build-your-own">Build Your Own</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#contact-us">Contact Us</a></li>
+                    <li><a href="#login-signup">Login/Signup</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <div class="cart-icon" id="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count" class="cart-count">0</span>
+                </div>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Your Healthy Pizza Fix, Delivered Fast & Fresh!</h1>
+                    <p class="tagline">Experience guilt-free indulgence with our authentic thin-crust pizzas, crafted with fresh ingredients and delivered right to your door.</p>
+                    <a href="#featured-pizzas" class="btn btn-primary">Order Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- USP Section -->
+        <section id="usps" class="usp-section">
+            <div class="container grid-4">
+                <div class="usp-item">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Healthy & Guilt-Free Goodness</h3>
+                    <p>Fresh, high-quality ingredients, lighter options for a healthier pizza experience.</p>
+                </div>
+                <div class="usp-item">
+                    <i class="fas fa-pizza-slice"></i>
+                    <h3>Authentic Thin Crust Perfection</h3>
+                    <p>Crispy, light, and superior quality thin crust that melts in your mouth.</p>
+                </div>
+                <div class="usp-item">
+                    <i class="fas fa-dollar-sign"></i>
+                    <h3>Affordably Delicious</h3>
+                    <p>Premium taste without the premium price tag. Great value deals for everyone.</p>
+                </div>
+                <div class="usp-item">
+                    <i class="fas fa-truck-fast"></i>
+                    <h3>Fast & Fresh Delivery</h3>
+                    <p>Quick preparation from our cloud kitchen, efficient doorstep delivery.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Pizzas / Menu Overview -->
+        <section id="featured-pizzas" class="menu-section section-padding bg-light">
+            <div class="container">
+                <h2>Our Signature Thin Crust Pizzas</h2>
+                <p class="section-description">Discover our most loved healthy and delicious creations.</p>
+                <div class="pizza-grid grid-3">
+                    <!-- Pizza Card 1 -->
+                    <div class="pizza-card" data-id="1" data-name="Garden Fresh Delight" data-price="12.99" data-image="https://www.foodandwine.com/thmb/pXQJz2W1j-3-e7-7s-1N_22-J4g=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Pepperoni-Pizza-FT-RECIPE0523-74b865513470438a8e341517a61622b7.jpg">
+                        <img src="https://www.foodandwine.com/thmb/pXQJz2W1j-3-e7-7s-1N_22-J4g=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Pepperoni-Pizza-FT-RECIPE0523-74b865513470438a8e341517a61622b7.jpg" alt="Garden Fresh Delight Pizza">
+                        <h3>Garden Fresh Delight</h3>
+                        <p class="description">Loaded with roasted bell peppers, olives, spinach, cherry tomatoes & low-fat mozzarella.</p>
+                        <span class="price">$12.99</span>
+                        <button class="btn btn-secondary add-to-cart">Add to Cart</button>
+                    </div>
+
+                    <!-- Pizza Card 2 -->
+                    <div class="pizza-card" data-id="2" data-name="Lean Chicken & Pesto" data-price="14.50" data-image="https://i.pinimg.com/736x/8e/eb/45/8eeb45161f76269b2b527788448558b8.jpg">
+                        <img src="https://i.pinimg.com/736x/8e/eb/45/8eeb45161f76269b2b527788448558b8.jpg" alt="Lean Chicken & Pesto Pizza">
+                        <h3>Lean Chicken & Pesto</h3>
+                        <p class="description">Grilled chicken breast, fresh basil pesto, sun-dried tomatoes & a sprinkle of feta.</p>
+                        <span class="price">$14.50</span>
+                        <button class="btn btn-secondary add-to-cart">Add to Cart</button>
+                    </div>
+
+                    <!-- Pizza Card 3 -->
+                    <div class="pizza-card" data-id="3" data-name="Spicy Paneer Nirvana" data-price="13.75" data-image="https://media-cdn.tripadvisor.com/media/photo-s/11/0b/40/65/paneer-tikka-pizza.jpg">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/11/0b/40/65/paneer-tikka-pizza.jpg" alt="Spicy Paneer Nirvana Pizza">
+                        <h3>Spicy Paneer Nirvana</h3>
+                        <p class="description">Marinated paneer, onions, capsicum, green chilies, and a zesty tandoori sauce.</p>
+                        <span class="price">$13.75</span>
+                        <button class="btn btn-secondary add-to-cart">Add to Cart</button>
+                    </div>
+
+                    <!-- Pizza Card 4 -->
+                    <div class="pizza-card" data-id="4" data-name="Mushroom Truffle Feast" data-price="15.25" data-image="https://www.hellofresh.com/img/hellofresh_com/image/upload/f_auto,fl_lossy,q_auto:eco,w_1200/hellofresh_s3/image/63b2f5d9d700e5728a01104e-1b32ae13.jpg">
+                        <img src="https://www.hellofresh.com/img/hellofresh_com/image/upload/f_auto,fl_lossy,q_auto:eco,w_1200/hellofresh_s3/image/63b2f5d9d700e5728a01104e-1b32ae13.jpg" alt="Mushroom Truffle Feast Pizza">
+                        <h3>Mushroom Truffle Feast</h3>
+                        <p class="description">Assorted mushrooms, truffle oil drizzle, fresh herbs, and a creamy white sauce.</p>
+                        <span class="price">$15.25</span>
+                        <button class="btn btn-secondary add-to-cart">Add to Cart</button>
+                    </div>
+
+                    <!-- Pizza Card 5 -->
+                    <div class="pizza-card" data-id="5" data-name="Mediterranean Veggie" data-price="13.99" data-image="https://thegirlonbloor.com/wp-content/uploads/2021/05/Greek-Vegetarian-Pizza-3-1-of-1.jpg">
+                        <img src="https://thegirlonbloor.com/wp-content/uploads/2021/05/Greek-Vegetarian-Pizza-3-1-of-1.jpg" alt="Mediterranean Veggie Pizza">
+                        <h3>Mediterranean Veggie</h3>
+                        <p class="description">Artichoke hearts, sun-dried tomatoes, black olives, feta cheese, and a light tomato sauce.</p>
+                        <span class="price">$13.99</span>
+                        <button class="btn btn-secondary add-to-cart">Add to Cart</button>
+                    </div>
+
+                    <!-- Pizza Card 6 -->
+                    <div class="pizza-card" data-id="6" data-name="Smoked BBQ Chicken" data-price="14.99" data-image="https://static.toiimg.com/thumb/msid-77291077,imgsize-200780,width-800,height-600,resizemode-75/77291077.jpg">
+                        <img src="https://static.toiimg.com/thumb/msid-77291077,imgsize-200780,width-800,height=600,resizemode-75/77291077.jpg" alt="Smoked BBQ Chicken Pizza">
+                        <h3>Smoked BBQ Chicken</h3>
+                        <p class="description">Tender smoked chicken, red onions, cilantro, and a tangy low-sugar BBQ sauce.</p>
+                        <span class="price">$14.99</span>
+                        <button class="btn btn-secondary add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <a href="#" class="btn btn-primary">View Full Menu</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Build Your Own Pizza Section -->
+        <section id="build-your-own" class="section-padding">
+            <div class="container">
+                <h2>Craft Your Perfect Healthy Pizza</h2>
+                <p class="section-description">Unleash your creativity and build a personalized thin-crust pizza that fits your taste and health goals.</p>
+
+                <form id="byop-form" class="byop-form">
+                    <div class="byop-step">
+                        <h3>1. Choose Your Base (Thin Crust - Default)</h3>
+                        <div class="byop-options">
+                            <label><input type="radio" name="crust-size" value="small" data-price="10.00" checked> Small (8") - $10.00</label>
+                            <label><input type="radio" name="crust-size" value="medium" data-price="12.00"> Medium (10") - $12.00</label>
+                            <label><input type="radio" name="crust-size" value="large" data-price="14.00"> Large (12") - $14.00</label>
+                        </div>
+                    </div>
+
+                    <div class="byop-step">
+                        <h3>2. Pick Your Healthy Sauce</h3>
+                        <div class="byop-options">
+                            <label><input type="radio" name="sauce" value="tomato" data-price="0.00" checked> Light Tomato</label>
+                            <label><input type="radio" name="sauce" value="pesto" data-price="1.50"> Fresh Pesto (+$1.50)</label>
+                            <label><input type="radio" name="sauce" value="white-garlic" data-price="1.00"> White Garlic (+$1.00)</label>
+                        </div>
+                    </div>
+
+                    <div class="byop-step">
+                        <h3>3. Select Your Cheese</h3>
+                        <div class="byop-options">
+                            <label><input type="radio" name="cheese" value="low-fat-mozzarella" data-price="0.00" checked> Low-Fat Mozzarella</label>
+                            <label><input type="radio" name="cheese" value="feta" data-price="1.00"> Feta (+$1.00)</label>
+                            <label><input type="radio" name="cheese" value="vegan" data-price="2.00"> Vegan Cheese (+$2.00)</label>
+                        </div>
+                    </div>
+
+                    <div class="byop-step">
+                        <h3>4. Add Your Healthy Toppings (+$1.00/each)</h3>
+                        <div class="byop-options grid-2">
+                            <label><input type="checkbox" name="toppings" value="spinach" data-price="1.00"> Spinach</label>
+                            <label><input type="checkbox" name="toppings" value="mushrooms" data-price="1.00"> Mushrooms</label>
+                            <label><input type="checkbox" name="toppings" value="bell-peppers" data-price="1.00"> Bell Peppers</label>
+                            <label><input type="checkbox" name="toppings" value="onions" data-price="1.00"> Onions</label>
+                            <label><input type="checkbox" name="toppings" value="olives" data-price="1.00"> Olives</label>
+                            <label><input type="checkbox" name="toppings" value="jalapenos" data-price="1.00"> Jalapeños</label>
+                            <label><input type="checkbox" name="toppings" value="chicken" data-price="1.50"> Grilled Chicken (+$1.50)</label>
+                            <label><input type="checkbox" name="toppings" value="paneer" data-price="1.50"> Paneer (+$1.50)</label>
+                            <label><input type="checkbox" name="toppings" value="broccoli" data-price="1.00"> Broccoli</label>
+                            <label><input type="checkbox" name="toppings" value="pineapple" data-price="1.00"> Pineapple</label>
+                        </div>
+                    </div>
+
+                    <div class="byop-summary">
+                        <h3>Current Price: <span id="byop-current-price">$10.00</span></h3>
+                        <button type="submit" class="btn btn-primary add-to-cart-byop">Add Custom Pizza to Cart</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="section-padding bg-light">
+            <div class="container">
+                <h2>What Our Customers Say</h2>
+                <div class="testimonial-grid grid-2">
+                    <div class="testimonial-card">
+                        <p>"Finally, a pizza that tastes amazing and doesn't leave me feeling guilty! The thin crust is perfect, and the ingredients are so fresh."</p>
+                        <div class="customer-info">
+                            <span>- Priya S.</span>
+                            <div class="stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"PizzApp is my go-to for quick and delicious meals. The prices are unbeatable for the quality, and delivery is always super fast."</p>
+                        <div class="customer-info">
+                            <span>- Rahul K.</span>
+                            <div class="stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Promotions Section -->
+        <section id="promotions" class="section-padding">
+            <div class="container text-center">
+                <h2>Exclusive Deals & Offers</h2>
+                <div class="promo-card">
+                    <h3>Weekend Family Feast!</h3>
+                    <p>Order any 2 Large Pizzas & get 1 Healthy Side FREE!</p>
+                    <span class="promo-code">Use Code: FEASTMODE</span>
+                    <a href="#featured-pizzas" class="btn btn-primary mt-2">Grab Deal Now</a>
+                </div>
+                <!-- Add more promo cards or a carousel here -->
+            </div>
+        </section>
+
+        <!-- Placeholder for other pages/sections -->
+        <section id="about-us" class="section-padding bg-light">
+            <div class="container text-center">
+                <h2>About PizzApp</h2>
+                <p class="section-description">Our story is simple: make healthy, delicious, thin-crust pizzas accessible and affordable for everyone. We believe in fresh ingredients, culinary passion, and fast, friendly service from our cloud kitchen to your table.</p>
+                <a href="#" class="btn btn-secondary">Learn More</a>
+            </div>
+        </section>
+
+        <section id="contact-us" class="section-padding">
+            <div class="container text-center">
+                <h2>Contact Us</h2>
+                <p class="section-description">Have questions or need assistance? Reach out to us!</p>
+                <p>Email: <a href="mailto:support@pizzapp.com">support@pizzapp.com</a></p>
+                <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                <a href="#" class="btn btn-primary">Send a Message</a>
+            </div>
+        </section>
+
+        <section id="login-signup" class="section-padding bg-light">
+            <div class="container text-center">
+                <h2>Join Our Community</h2>
+                <p class="section-description">Sign up for exclusive offers, faster checkout, and order history!</p>
+                <a href="#" class="btn btn-primary">Login / Sign Up</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container grid-4">
+            <div class="footer-col">
+                <h4>PizzApp</h4>
+                <p>Your healthy thin-crust pizza solution.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#featured-pizzas">Menu</a></li>
+                    <li><a href="#build-your-own">Build Your Own</a></li>
+                    <li><a href="#promotions">Deals</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Customer Service</h4>
+                <ul>
+                    <li><a href="#contact-us">Contact Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Order Tracking</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Working Hours</h4>
+                <p>Mon - Fri: 11:00 AM - 10:00 PM</p>
+                <p>Sat - Sun: 11:00 AM - 11:00 PM</p>
+                <div class="delivery-check">
+                    <input type="text" placeholder="Enter Pincode" class="pincode-input">
+                    <button class="btn btn-secondary btn-sm">Check</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 PizzApp. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-cart" id="close-cart">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items will be dynamically added here -->
+            <p class="empty-cart-message">Your cart is empty.</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Subtotal:</span>
+                <span id="cart-total">$0.00</span>
+            </div>
+            <button class="btn btn-primary btn-checkout" id="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+```
